@@ -29,7 +29,7 @@ export const Work = [
     },
     {
         id: 4,
-        name: "Technova Blog",
+        name: "Technova Blog (wordpress + wordpress.com free hosting + subdomain (affiliate marketing, no add scen and less plugings used compared to wordpress.org)- will later shift its hosting and domain to paid hostinger platform)",
         description: "Blog created for students interested to know about technova website making journey",
         tags: ["wordpress", "Blog", "fun"],
 
@@ -38,7 +38,7 @@ export const Work = [
 
     }, {
         id: 5,
-        name: "Personal BLOG",
+        name: "Personal BLOG (blogger + free hosting and subdomain - affiliate markiting + addscn + selling own cources)",
         description: "My random fun blogs",
         tags: ["wordpress", "Blog", "DCRUST"],
 
@@ -111,7 +111,7 @@ export const Work = [
 
     {
         id: 11,
-        name: " Punita Gaba | Portfolio",
+        name: " Punita Gaba | Portfolio (netlify)",
         description: "My portfolio.",
         tags: ["React", "Portfolio", "JobSeeker"],
 

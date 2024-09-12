@@ -240,6 +240,14 @@ const MySkillsPage = () => {
                             </SkillItem>
                             <SkillRating rating={70} color="#4caf50" />
                         </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <SkillItem>
+                                <SkillIcon>🎨</SkillIcon>
+                                <SkillName>DAVINCI RESOLVE editor</SkillName>
+                            </SkillItem>
+                            <SkillRating rating={70} color="#4caf50" />
+                        </div>
+
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                             <SkillItem>
                                 <SkillIcon>📱</SkillIcon>
@@ -373,7 +381,7 @@ const MySkillsPage = () => {
                             <SkillRating rating={70} color="#4caf50" />
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <SkillItem style={{width:'40px'}}>
+                            <SkillItem style={{ width: '40px' }}>
                                 <SkillIcon>📱</SkillIcon>
                                 <SkillName>Mobile Application Development
                                     Flutter</SkillName>
@@ -383,7 +391,21 @@ const MySkillsPage = () => {
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <SkillItem>
                                 <SkillIcon>📱</SkillIcon>
-                                <SkillName>Game Development</SkillName>
+                                <SkillName>Game Development with Unity</SkillName>
+                            </SkillItem>
+                            <SkillRating rating={70} color="#4caf50" />
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <SkillItem>
+                                <SkillIcon>📱</SkillIcon>
+                                <SkillName>Autocad</SkillName>
+                            </SkillItem>
+                            <SkillRating rating={70} color="#4caf50" />
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <SkillItem>
+                                <SkillIcon>📱</SkillIcon>
+                                <SkillName>Canva graphic designing</SkillName>
                             </SkillItem>
                             <SkillRating rating={70} color="#4caf50" />
                         </div>
@@ -418,6 +440,11 @@ const MySkillsPage = () => {
 
                     </SkillsSection>
                 </Box>
+            </SkillsContainer>
+            <SkillsContainer>
+                <div>
+                    strengths, weekness
+                </div>
             </SkillsContainer>
         </ThemeProvider >
     );

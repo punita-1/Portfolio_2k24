@@ -32,20 +32,27 @@ const EducationExp = () => {
 
                 <div>
                     <Header />
-                    <SocialIcons />
 
                     <div className="education-exp-container">
+                    <SocialIcons />
                         <div className='mygrid'>
                             <div className="education-container">
                                 <h2>Education</h2>
                                 <div className="education-items">
                                     <div className="education-item">
-                                        <h3>Bachelor of Science in Computer Science</h3>
-                                        <p>University of XYZ, Graduated May 2015</p>
+                                        <h3>Bachelor of Technology in Computer Science</h3>
+                                        <p>Deenbandhu Chhoturam University of Science and Technology Murthal, Graduated May 2025</p>
+                                        <p>8 SGPA </p>
                                     </div>
                                     <div className="education-item">
-                                        <h3>High School Diploma</h3>
-                                        <p>ABC High School, Graduated June 2011</p>
+                                        <h3>12th CBSE</h3>
+                                        <p>Aggarsain Public School Kurukshetra, Graduated April 2021</p>
+                                        <p>92% </p>
+                                    </div>
+                                    <div className="education-item">
+                                        <h3>10th CBSE</h3>
+                                        <p>Aggarsain Public School Kurukshetra, Graduated April 2019</p>
+                                        <p>89% </p>
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +62,8 @@ const EducationExp = () => {
                             <div className="experience-container">
                                 <h2>Experience</h2>
                                 <div className="experience-item">
-                                    <h3>Software Engineer</h3>
-                                    <p>Company ABC, January 2016 - Present</p>
+                                    <h3>Training</h3>
+                                    <p>NIC Kurukshetra, June 2023 - july 2023 </p>
                                     <p>
                                         Responsible for designing and implementing software solutions
                                         using React, Redux, and Node.js. Collaborated with cross-functional
@@ -64,7 +71,7 @@ const EducationExp = () => {
                                     </p>
                                 </div>
                                 <div className="experience-item">
-                                    <h3>Web Developer</h3>
+                                    <h3>Android Developer</h3>
                                     <p>Company XYZ, June 2015 - December 2015</p>
                                     <p>
                                         Developed and maintained responsive websites using HTML, CSS,

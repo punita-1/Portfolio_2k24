@@ -2,12 +2,12 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { DarkTheme, lightTheme } from './Themes';
 import Header from './Header'
-
-import LogoComponent from '../subComponents/LogoComponent';
+import { motion } from 'framer-motion'
+// import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
-import ParticleComponent from '../subComponents/ParticleComponent';
-import BigTitle from '../subComponents/BigTitle'
-import astronaut from '../assets/Images/spaceman.png'
+// import ParticleComponent from '../subComponents/ParticleComponent';
+// import BigTitle from '../subComponents/BigTitle'
+// import astronaut from '../assets/Images/spaceman.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -34,24 +34,23 @@ img{
 }
 `
 const Main = styled.div`
-  border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
-  height: 60vh;
+//   height: 60vh;
   z-index: 3;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
   font-size: calc(0.6rem + 1vw);
- backdrop-filter: blur(4px);
+//  backdrop-filter: blur(4px);
 
   position: absolute;
   left: calc(5rem + 5vw);
   top: 10rem;
-  font-family: 'Ubuntu Mono', monospace;
-  font-style: italic;
+//   font-family: 'Ubuntu Mono', monospace;
+//   font-style: italic;
 `
 
 
@@ -60,39 +59,47 @@ const Main = styled.div`
 const AboutPage = () => {
     return (
         <>
-        {/* <Header /> */}
-        {/* <SocialIcons/> */}
-        {/* <SocialIcons/> */}
-        <ThemeProvider theme={lightTheme}>
-            <div>
-
-          
-            <Box>
-                <Header/>
-
-                {/* <LogoComponent theme='dark' /> */}
-                <SocialIcons />
-                {/* <PowerButton /> */}
-                {/* <ParticleComponent theme='dark' /> */}
-
-                {/* <Spaceman> */}
-                    {/* <img src={astronaut} alt="spaceman" /> */}
-                {/* </Spaceman> */}
-                <Main>
-                    I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-                    <br /> <br />
-                    I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-                    <br /> <br />
-                    I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
-                </Main>
-
-                {/* <BigTitle text="ABOUT" top="10%" left="5%" /> */}
+            <ThemeProvider theme={lightTheme}>
+                <div>
 
 
-            </Box>
+                    <Box>
+                        <Header />
+                        <SocialIcons />
+                        <Main>
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ type: "spring", duration: 0.5, delay: 0.4 }}
+                            >
+                                I am a passionate  <span style={{ fontSize: '35px', fontWeight: '700', color: 'rgb(231, 76, 112)' }}> <i>Software Developer </i></span> with a strong commitment to delivering high-quality solutions. You can find me on social media, where I am happy to connect with other professionals and discuss potential projects.
 
-            </div>
-        </ThemeProvider>
+                            </motion.div>
+                            <br />
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ type: "spring", duration: 0.5, delay: 0.6 }}
+                            >
+                                I am always eager to learn new skills and stay up-to-date with the latest technologies. I am open to new opportunities and would be happy to hear from you if you have a project in mind.
+                            </motion.div>
+                            <br />
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ type: "spring", duration: 0.5, delay: 0.8 }}
+                            >
+                                In addition to my work as a developer, I also enjoy writing  <span style={{ fontSize: '25px', fontWeight: '700', color: 'rgb(231, 76, 112)' }}> <i>Blogs </i></span> and making  <span style={{ fontSize: '25px', fontWeight: '700', color: 'rgb(231, 76, 112)' }}> <i>Youtube videos.</i></span>
+                            </motion.div>
+                        </Main>
+
+                        {/* <BigTitle text="ABOUT" top="10%" left="5%" /> */}
+
+
+                    </Box>
+
+                </div>
+            </ThemeProvider>
 
         </>
     )

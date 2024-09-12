@@ -34,10 +34,6 @@ color: ${props => props.theme.text};
 z-index:1;
 `
 
-const BottomBar = styled.div`
-
-`
-
 const ABOUT = styled(NavLink)`
 color: ${props => props.theme.text};
 text-decoration: none;
@@ -58,18 +54,18 @@ const Nav = styled.nav`
   z-index:20;
   top: 10;
   left: 10;
-  width: 50%;
+  width: 49%;
   margin-top: 5%;
   height: 60%;
   font-size: 12px;
-  padding:1rem;
+  padding:1.5rem;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: translatex(${props => (props.open ? '155%' : '200%')});
-  transition: transform 0.3s ease-out;
+  transform: translatex(${props => (props.open ? '155%' : '300%')});
+  transition: transform 0.5s ease-out;
 `
 
 const MenuIcon = styled.button`
@@ -86,7 +82,7 @@ const Line = styled.span`
   display: block;
   width: 2rem;
   height: 0.25rem;
-  background: ${props => props.theme.text};
+  background: #874CCC;
   margin: 0.5rem 0;
   transition: transform 0.3s ease-out;
   transform-origin: left center;
@@ -123,154 +119,91 @@ const Header = () => {
                     <Home to="/">
                         {/* target="_blank" href="mailto:codebucks27@gmail.com" */}
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
 
                         >
                             Home
                         </motion.h2>
                     </Home>
-
-                    <Contact to="/contact">
-                        {/* target="_blank" href="mailto:codebucks27@gmail.com" */}
+                    <ABOUT to="/about" >
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
 
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
                         >
-                            Contact
+                            About
                         </motion.h2>
-                    </Contact>
+                    </ABOUT>
+
                     <EducationExperience to="/eduexp">
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
 
                         >
                             Education & Experience
                         </motion.h2>
                     </EducationExperience>
+                    <SKILLS to="/skills">
+                        <motion.h2
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            My Skills
+                        </motion.h2>
+                    </SKILLS>
+                    <WORK to="/work" >
+                        <motion.h2
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            Work
+                        </motion.h2>
+                    </WORK>
+                    <CVRESUME to="/cvresume">
+                        <motion.h2
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
+                        >
+                            CV/Resume
+                        </motion.h2>
+                    </CVRESUME>
                     <BLOG to="/blog">
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
                         >
                             Blog
                         </motion.h2>
                     </BLOG>
                     <HOBBIES to="/hobbies">
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
+
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
                         >
                             Hobbies
                         </motion.h2>
                     </HOBBIES>
-                    <WORK to="/work" >
+                    <Contact to="/contact">
+                        {/* target="_blank" href="mailto:codebucks27@gmail.com" */}
                         <motion.h2
-                        // initial={{
-                        //     x: -200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
-                        >
-                            Work
-                        </motion.h2>
-                    </WORK>
 
-                    <ABOUT to="/about" >
-                        <motion.h2
-                        // initial={{
-                        //     x: 200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
+                            whileHover={{ scale: 1.1, color: '#874CCC' }}
+                            whileTap={{ scale: 0.9 }}
+
                         >
-                            About
+                            Contact
                         </motion.h2>
-                    </ABOUT>
-                    <SKILLS to="/skills">
-                        <motion.h2
-                        // initial={{
-                        //     x: 200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
-                        >
-                            My Skills
-                        </motion.h2>
-                    </SKILLS>
-                    <CVRESUME to="/cvresume">
-                        <motion.h2
-                        // initial={{
-                        //     x: 200,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // animate={{
-                        //     x: 0,
-                        //     transition: { type: 'spring', duration: 1.5, delay: 1 }
-                        // }}
-                        // whileHover={{ scale: 1.1 }}
-                        // whileTap={{ scale: 0.9 }}
-                        >
-                            CV/Resume
-                        </motion.h2>
-                    </CVRESUME>
+                    </Contact>
+
 
                 </Nav>
             </div>

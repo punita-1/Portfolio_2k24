@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import styled, { keyframes } from 'styled-components'
-
+import { motion } from "framer-motion";
 import music from "../assets/audio/u-said-it-v13-1167.mp3"
 
 const Box = styled.div`
@@ -40,13 +40,11 @@ const play = keyframes`
 }
 `
 const Line = styled.span`
-background: ${props => props.theme.text};
-border: 1px solid ${props => props.theme.body};
-
+background: #874CCC;
 animation:${play} 1s ease infinite;
 animation-play-state: ${props => props.click ? "running" : "paused"};
-height: 1rem;
-width: 2px;
+height: 1.6rem;
+width: 3px;
 margin:0 0.1rem
 `
 
@@ -66,6 +64,13 @@ const SoundBar = () => {
     }
     return (
         <Box onClick={() => handleClick()}>
+            {/* <motion.div 
+            initial={{ x:-100, opacity: 0, scale: 0 }}
+            animate={{ x: 0, opacity: 1, scale: 1.2 }}
+            transition={{ type: "spring", duration: 0.5, delay: 0.5 }}> 
+            </motion.div> */}
+
+            <Line click={click} />
             <Line click={click} />
             <Line click={click} />
             <Line click={click} />

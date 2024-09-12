@@ -1,85 +1,47 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
+// import Me from '../assets/Images/profile-img.png'
 import TypewriterText from '../subComponents/TypewriterText'
 
 
-const Box = styled(motion.div)`
-
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-
-
-width: 65vw;
-height:55vh;
-display: flex;
-`
-
-const SubBox = styled.div`
-width: 50%;
-position: relative;
-display: flex;
-
-.pic{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
-}
-`
-
-const Text = styled.div`
-font-size: calc(1em + 1.5vw);
-color: black;
-padding: 2rem;
-cursor: pointer;
-
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-
-&>*:last-child{
-    color: black;
-    font-size: calc(0.5rem + 1.5vw);
-    font-weight:300;
-
-}
-
-
-
-`
-
 const Intro = () => {
     return (
-        <Box
-            // initial={{ height: 0 }}
-            // animate={{ height: '55vh' }}
-            // transition={{ type: 'spring', duration: 2, delay: 1 }}
-        >
-            <SubBox>
-                <Text>
-                    <p style={{ fontSize: '30px' }}>Hello, <span>My Name Is</span></p>
-                    <h2 style={{ fontWeight: '700' }}>Punita Gaba.</h2>
-                    <p><span>I Am</span> <b style={{ fontSize: '25px', fontWeight: 'bold' }}> <TypewriterText /> </b> </p>
 
-                    <h6>I design and Code simple yet beautiful websites.</h6>
-                </Text>
-            </SubBox>
-            <SubBox>
-                <motion.div
-                    // initial={{ opacity: 0 }}
-                    // animate={{ opacity: 1 }}
-                    // transition={{ duration: 1, delay: 2 }}
-                >
-                    <img style={{ borderRadius: '80%' }} className="pic" src={Me} alt="Profile Pic" />
-                </motion.div>
-            </SubBox>
-        </Box>
+        <div
+            style={{
+                // backgroundColor:'blue',
+                position: 'absolute',
+                left: '66%',
+                top: '38%',
+                transform: 'translate(-50%, -50%)',
+                width: '49vw',
+                padding: '2rem',
+                zIndex: '1'
+            }}
+        >
+            <motion.p
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 0.5, delay: 0.5 }}
+                style={{ fontSize: '50px', fontWeight: 'bold' }}>Hello, <span style={{ fontWeight: '500' }}>My Name Is</span></motion.p>
+            <motion.h2
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 0.5, delay: 0.7 }}
+                style={{ fontSize: '37px', fontWeight: '700',color: '#874CCC'}}> <i>Punita Gaba.</i></motion.h2>
+            <motion.p
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 0.5, delay: 0.9 }}
+            ><span style={{ fontSize: '25px' }}>I Am </span> <i><b style={{ fontSize: '35px', fontWeight: 'bold', color: 'rgb(231, 76, 112)' }}> <TypewriterText /> </b></i> </motion.p>
+
+            <motion.h6
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", duration: 0.5, delay: 1 }}
+                style={{ fontSize: '30px' }}>"Crafting digital magic with a dash of creativity and a sprinkle of tech wizardry! Let's embark on a journey where pixels dance and ideas thrive."</motion.h6>
+        </div>
     )
 }
 

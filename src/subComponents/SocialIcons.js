@@ -4,112 +4,109 @@ import { FaTwitter, FaInstagramSquare, FaYoutube, FaGithub, FaSnapchat, FaFacebo
 import { SiFreelancer } from "react-icons/si";
 import styled from "styled-components";
 // import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
-import { DarkTheme } from "../components/Themes";
+// import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-
   position: fixed;
   bottom: 0;
-  left: 2rem;
+  left: 60rem;
+  zIndex: 9999;
 
-  & > *:not(:last-child) {
-    margin: 0.5rem 0;
+  & > * {
+    margin-right: 1.4rem;
+    margin-bottom: 4.2rem;
+    transition: color 0.2s ease-in-out;
+
+    a {
+      color: inherit;
+    }
+
+    &:hover {
+        color: rgb(231, 76, 112);
+    }
+  }
+
+  & > *:last-child {
+    margin-right: 0;
   }
 `;
 
-const Line = styled(motion.span)`
-  width: 2px;
-  height: 8rem;
-  background-color: ${(props) =>
-        props.color === "dark" ? DarkTheme.text : DarkTheme.body};
-`;
+
 
 const SocialIcons = (props) => {
     return (
         <Icons>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1 }}
+                style={{ zIndex: 9999 }}
+                initial={{ scale: 0, opacity: '0' }}
+                animate={{ scale: [0, 2, 1.5, 1.2], opacity: '1' }}
+                transition={{ type: "spring", duration: 1.3, delay: 0.5 }}
             >
                 <a href="">
-                    <FaYoutube style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaYoutube style={{ width: '40px', height: '40px' }} />
                 </a>
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.4, delay: 0.5 }}
             >
                 <a href="">
-                    <FaSnapchat style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaSnapchat style={{ width: '40px', height: '40px' }} />
                 </a>
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.5, delay: 0.5 }}
             >
                 <a href="">
-                    <FaInstagramSquare style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaInstagramSquare style={{ width: '40px', height: '40px' }} />
                 </a>
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.6, delay: 0.5 }}
             >
                 <a href="">
-                    <FaFacebook style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaFacebook style={{ width: '40px', height: '40px' }} />
                 </a>
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1.2 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.7, delay: 0.5 }}
             >
                 <a href="">
-                    <FaGithub style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaGithub style={{ width: '40px', height: '40px' }} />
                 </a>
 
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1.2 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.8, delay: 0.5 }}
             >
                 <a href="">
-                    <SiFreelancer style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <SiFreelancer style={{ width: '40px', height: '40px' }} />
                 </a>
 
             </motion.div>
             <motion.div
-            // initial={{ scale: 0 }}
-            // animate={{ scale: [0, 1, 1.5, 1] }}
-            // transition={{ type: "spring", duration: 1, delay: 1.6 }}
+                initial={{ scale: 0 }}
+                animate={{ scale: [0, 2, 1.5, 1.2] }}
+                transition={{ type: "spring", duration: 1.9, delay: 0.5 }}
             >
                 <a href="">
-                    <FaTwitter style={{ width: '40px', height: '40px', color: 'black' }} />
+                    <FaTwitter style={{ width: '40px', height: '40px' }} />
                 </a>
             </motion.div>
 
-            <Line style={{ width: '5px', height: '150px ', color: 'black' }}
-                color={props.theme}
-            // initial={{
-            //     height: 0,
-            // }}
-            // animate={{
-            //     height: "10rem",
-            // }}
-            // transition={{
-            //     type: "spring",
-            //     duration: 1,
-            //     delay: 0.8,
-            // }}
-            />
+
         </Icons>
     );
 };
