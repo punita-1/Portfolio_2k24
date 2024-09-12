@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio_2k24/static/css/main.051e9f3d.css",
+    "main.js": "/Portfolio_2k24/static/js/main.3f61fd65.js",
+    "static/media/u-said-it-v13-1167.mp3": "/Portfolio_2k24/static/media/u-said-it-v13-1167.6e332b4131f24e9bfeb5.mp3",
+    "static/media/2.webp": "/Portfolio_2k24/static/media/2.574104ad442c095a5bbe.webp",
+    "static/media/3.webp": "/Portfolio_2k24/static/media/3.72b96ccc924a0b0d614d.webp",
+    "static/media/1.webp": "/Portfolio_2k24/static/media/1.378e463bfefafe30c0cb.webp",
+    "index.html": "/Portfolio_2k24/index.html",
+    "main.051e9f3d.css.map": "/Portfolio_2k24/static/css/main.051e9f3d.css.map",
+    "main.3f61fd65.js.map": "/Portfolio_2k24/static/js/main.3f61fd65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.051e9f3d.css",
+    "static/js/main.3f61fd65.js"
+  ]
+}
